@@ -14,7 +14,7 @@ The builds for the website do require internet access.
 If you have write access to incubator, you should clone it from https://git-wip-us.apache.org/repos/asf/incubator.git
 otherwise you can fork from our github mirror https://github.com/apache/incubator and raise a pull request.
 
-## Building & Running the site
+## Building & Running the site locally
 
 There is a custom `bake.sh` file that is used to build the website.
 You can call it with any of the [arguments you would pass to jbake](http://jbake.org/docs/2.5.1/#bake_command).
@@ -23,7 +23,7 @@ This will start up JBake in a watching mode as you make changes it will refresh 
 While working with it locally, you'll notice that the site URLs redirect to `incubator.apache.org`;
 to change this edit `jbake.properties` and uncomment the line referencing `localhost`
 
-## Jenkins Setup
+## Jenkins Setup - publishing the live site
 
 Commits to the `jbake-site` branch are automatically checked out and built using `build_site.sh`.
 Once this goes live those commits will go against `master`.
